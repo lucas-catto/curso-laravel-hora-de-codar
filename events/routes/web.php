@@ -7,7 +7,17 @@ Route::get('/', function () {
     $name = 'lucas';
     $age = 17;
 
-    return view('welcome', compact('name', 'age'));
+    $numbers = [0,1,2,3,4,5,6,7,8,9];
+    $names = ['lucas', 'elon', 'john', 'larry', 'sergey'];
+
+    return view('welcome',
+        compact(
+            'name',
+            'age',
+            'numbers',
+            'names'
+        )
+    );
 });
 
 Route::get('/contact', function () {

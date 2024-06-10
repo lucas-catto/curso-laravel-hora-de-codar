@@ -34,5 +34,28 @@
 
         @endif
 
+        {{-- --}}
+
+        @for ($i = 0; $i < count($numbers); $i++)
+            @if ($i == 2)
+                <p>Hi {{ $i }}</p>
+            @else
+                <p>{{ $numbers[$i] }} - {{ $i }}</p>
+            @endif
+        @endfor
+
+        {{-- --}}
+
+        @php
+            $laravel = 'framework';
+            echo $laravel;
+        @endphp
+
+        {{-- --}}
+
+        @foreach ($names as $name)
+            <p>{{ $loop->index }} - {{ $name }}</p>
+        @endforeach
+
     </body>
 </html>
