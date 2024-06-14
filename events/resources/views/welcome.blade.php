@@ -5,9 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/script.js"></script>
     </head>
     <body>
         <h1>Title</h1>
+
+        <img src="./assets/img/banner.jpg" alt="">
 
         @if (10 > 5)
             <p>true</p>

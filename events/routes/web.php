@@ -25,5 +25,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/products', function () {
-    return view('contact');
+    return view('products');
 });
