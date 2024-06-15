@@ -24,6 +24,23 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/products', function () {
-    return view('products');
+Route::get('/produtos', function () {
+
+    $search = request('search');
+
+    return view('product', ['search' => $search]);
 });
+
+/*
+Route::get('/produtos/{id}', function (int $id) {
+    return view('product', compact('id'));
+})->where([
+    'id' => '[0-9]+'
+]);
+
+Route::get('/produtos_teste/{id?}', function (int $id = null) {
+    return view('product', compact('id'));
+})->where([
+    'id' => '[0-9]+'
+]);
+*/
