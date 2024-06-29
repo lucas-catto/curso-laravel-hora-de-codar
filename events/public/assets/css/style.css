@@ -28,6 +28,16 @@ header {
     background-color: #C28008;
     border-color:     #C28008;
 }
+
+.message {
+    padding:          10px;
+    width:            100%;
+    margin-bottom:    0px;
+    text-align:       center;
+    background-color: #D4EDDA;
+    color:            #155754;
+    border:           1px solid #C3E6CB;
+}
   
 /* navbar */
 #navbar img
@@ -68,7 +78,7 @@ header {
     margin: 0 auto;
 }
   
-  /* Events list */
+/* Events list */
 #events-container
 { padding: 50px; }
   
