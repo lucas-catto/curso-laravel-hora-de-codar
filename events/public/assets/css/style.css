@@ -113,7 +113,20 @@ header {
     font-size: 14px;
     color:     757575;
 }
-  
+
+/* Event create page */
+
+#event-create-container
+{ padding: 30px; }
+
+#event-create-conteiner label
+{ font-weight: bold; }
+
+#event-create-conteiner input,
+#event-create-conteiner select,
+#event-create-conteiner textarea
+{ font-size: 12px; }
+
 /* footer */
 footer {
     text-align:       center;
