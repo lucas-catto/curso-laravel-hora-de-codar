@@ -26,6 +26,7 @@ class EventController extends Controller
 
         // Espelhando as propriedades do Request para o Objeto de Event
         $event->title       = $request->title;
+        $event->date        = $request->date;
         $event->city        = $request->city;
         $event->private     = $request->private;
         $event->description = $request->description;
